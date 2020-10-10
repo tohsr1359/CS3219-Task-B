@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://localhost/resthub', { useNewUrlParser: true});
+mongoose.connect('mongodb://tohsr1359:ciaossu1359@cluster0-shard-00-00.zpu7c.gcp.mongodb.net:27017,cluster0-shard-00-01.zpu7c.gcp.mongodb.net:27017,cluster0-shard-00-02.zpu7c.gcp.mongodb.net:27017/resthub?ssl=true&replicaSet=atlas-n31tid-shard-0&authSource=admin&retryWrites=true&w=majority', { useNewUrlParser: true});
 var db = mongoose.connection;
 
 // Added check for DB connection
