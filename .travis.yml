@@ -3,4 +3,5 @@ node_js:
   - node
 services:
   - mongodb
-YARN_GPG=no
+script:
+  - mocha --exit
